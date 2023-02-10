@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lA --full-time {.,..,/boot}
+ls -la . .. /boot | sed -e 's/\.\//\/./g' -e 's/ \// \/\//g'
